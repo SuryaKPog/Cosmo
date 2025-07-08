@@ -1,0 +1,262 @@
+[
+  {
+    "question": "Hello",
+    "answer": "Hello there! Ready to explore the cosmos?"
+  },
+  {
+    "question": "Hi",
+    "answer": "Hi! I'm AstroBot, your guide to the stars. Ask me anything about space!"
+  },
+  {
+    "question": "Hey",
+    "answer": "Hey! Nice to see you. Curious about black holes, planets, or galaxies?"
+  },
+  {
+    "question": "Good morning",
+    "answer": "Good morning, Earthling! ☀️ The universe awaits your questions."
+  },
+  {
+    "question": "Good night",
+    "answer": "Good night! Sleep under the stars and dream of distant galaxies."
+  },
+  {
+    "question": "Who are you?",
+    "answer": "I'm AstroBot, your friendly cosmic companion here to guide you through the wonders of space!"
+  },
+  {
+    "question": "What can you do?",
+    "answer": "I can answer questions about space, planets, stars, black holes, galaxies, and more. Ask me anything!"
+  },
+  {
+    "question": "How old is the universe?",
+    "answer": "The universe is approximately 13.8 billion years old."
+  },
+  {
+    "question": "What is a star?",
+    "answer": "A star is a massive, luminous sphere of plasma held together by gravity, undergoing nuclear fusion."
+  },
+  {
+    "question": "Why is the sky blue?",
+    "answer": "Because molecules in Earth's atmosphere scatter blue light from the sun more than other colors."
+  },
+  {
+    "question": "What is dark matter?",
+    "answer": "Dark matter is a mysterious form of matter that doesn’t emit light or energy but has gravitational effects on visible matter."
+  },
+  {
+    "question": "How big is the Milky Way?",
+    "answer": "The Milky Way is about 100,000 light-years across."
+  },
+  {
+    "question": "How many moons does Jupiter have?",
+    "answer": "As of now, Jupiter has 95 known moons."
+  },
+  {
+    "question": "Can humans live on Mars?",
+    "answer": "Not yet, but scientists are exploring ways to make Mars habitable in the future."
+  },
+  {
+    "question": "What is a supernova?",
+    "answer": "A supernova is a powerful explosion of a star at the end of its life cycle."
+  },
+  {
+    "question": "What is a comet?",
+    "answer": "A comet is a small icy body that, when close to the sun, heats up and displays a glowing coma and tail."
+  },
+  {
+    "question": "Do aliens exist?",
+    "answer": "We haven’t found definitive proof yet, but the universe is vast and full of possibilities!"
+  },
+  {
+    "question": "What is the International Space Station (ISS)?",
+    "answer": "The ISS is a space station orbiting Earth, used for scientific research and international cooperation in space."
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "answer": "Jupiter is the largest, with a diameter of about 142,984 kilometers."
+  },
+  {
+    "question": "How do astronauts eat in space?",
+    "answer": "They eat specially prepared food in sealed packets, often rehydrated with water or eaten directly from tubes or pouches."
+  },
+  {
+    "question": "Can sound travel in space?",
+    "answer": "No, because space is a vacuum and sound needs a medium to travel through."
+  },
+  {
+    "question": "What is the Hubble Space Telescope?",
+    "answer": "Hubble is a powerful space telescope launched in 1990 that has captured stunning images of the universe."
+  },
+  {
+    "question": "What are shooting stars?",
+    "answer": "They are meteors — small rocks or debris that burn up in Earth's atmosphere, creating a streak of light."
+  },
+  {
+    "question": "What causes a solar eclipse?",
+    "answer": "A solar eclipse occurs when the Moon passes between the Earth and the Sun, blocking the Sun's light."
+  },
+  {
+    "question": "What is the Kuiper Belt?",
+    "answer": "It's a region beyond Neptune filled with icy bodies and dwarf planets, including Pluto."
+  },
+  {
+    "question": "Is the Moon moving away from Earth?",
+    "answer": "Yes, about 3.8 centimeters per year due to tidal interactions."
+  },
+  {
+    "question": "How long does it take for light from the Sun to reach Earth?",
+    "answer": "About 8 minutes and 20 seconds."
+  },
+  {
+    "question": "What is a nebula?",
+    "answer": "A nebula is a vast cloud of gas and dust in space, often a stellar nursery where stars are born."
+  },
+  {
+    "question": "Why is Pluto not a planet anymore?",
+    "answer": "Pluto was reclassified as a dwarf planet in 2006 because it doesn't clear its orbit of other debris."
+  },
+  {
+    "question": "How do rockets launch into space?",
+    "answer": "They use powerful engines that burn fuel to generate thrust and overcome Earth’s gravity."
+  },
+  {
+    "question": "Have humans ever left the solar system?",
+    "answer": "Not physically, but the Voyager 1 spacecraft has entered interstellar space."
+  },
+  {
+    "question": "What is an exoplanet?",
+    "answer": "An exoplanet is a planet that orbits a star outside our solar system."
+  },
+  {
+    "question": "What is a light-year?",
+    "answer": "A light-year is the distance light travels in one year, about 9.46 trillion kilometers."
+  },
+  {
+    "question": "Can I see the Milky Way from Earth?",
+    "answer": "Yes! In dark, clear skies far from city lights, the Milky Way appears as a glowing band across the sky."
+  },
+  {
+    "question": "Do you sleep, AstroBot?",
+    "answer": "Nope! I'm always awake and ready to explore the stars with you!"
+  },
+  {
+    "question": "What is a black hole?",
+    "answer": "A black hole is a region of spacetime where gravity is so strong that nothing, not even light, can escape. It forms from the remnants of massive stars."
+  },
+  {
+    "question": "How do black holes form?",
+    "answer": "They form when massive stars collapse under their own gravity after a supernova explosion."
+  },
+  {
+    "question": "What happens if you fall into a black hole?",
+    "answer": "You'd experience extreme gravitational forces — possibly 'spaghettification' — and be pulled into the singularity where physics breaks down."
+  },
+  {
+    "question": "Can black holes die?",
+    "answer": "Yes! They can slowly evaporate over trillions of years through a process called Hawking radiation."
+  },
+  {
+    "question": "Are black holes dangerous?",
+    "answer": "Only if you get too close! Luckily, the nearest known black hole is very far away."
+  },
+  {
+    "question": "What is a galaxy?",
+    "answer": "A galaxy is a huge system of stars, gas, dust, and dark matter held together by gravity. The Milky Way is our galaxy."
+  },
+  {
+    "question": "How many galaxies are there?",
+    "answer": "There may be over 2 trillion galaxies in the observable universe!"
+  },
+  {
+    "question": "What is the Milky Way?",
+    "answer": "The Milky Way is the galaxy we live in. It contains 100–400 billion stars."
+  },
+  {
+    "question": "What is the closest galaxy to us?",
+    "answer": "The Andromeda Galaxy, about 2.5 million light-years away, is the closest major galaxy."
+  },
+  {
+    "question": "Do galaxies collide?",
+    "answer": "Yes! In fact, the Milky Way is on a collision course with Andromeda, expected to merge in about 4.5 billion years."
+  },
+  {
+    "question": "What is a light-year?",
+    "answer": "A light-year is the distance light travels in one year — about 9.46 trillion kilometers (5.88 trillion miles)."
+  },
+  {
+    "question": "How old is the universe?",
+    "answer": "The universe is about 13.8 billion years old."
+  },
+  {
+    "question": "How many planets are in our solar system?",
+    "answer": "Eight: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Pluto is a dwarf planet."
+  },
+  {
+    "question": "What is the closest star to Earth?",
+    "answer": "Proxima Centauri, a red dwarf 4.24 light-years away in the Alpha Centauri system."
+  },
+  {
+    "question": "Can a star become a black hole?",
+    "answer": "Yes! Very massive stars can become black holes at the end of their life cycle."
+  },
+  {
+    "question": "What is a supernova?",
+    "answer": "A supernova is a massive explosion that occurs when a star runs out of fuel and collapses."
+  },
+  {
+    "question": "What is a neutron star?",
+    "answer": "It's the dense, collapsed core of a massive star left behind after a supernova, made mostly of neutrons."
+  },
+  {
+    "question": "What is a quasar?",
+    "answer": "A quasar is a supermassive black hole at the center of a galaxy, emitting incredible energy as it consumes matter."
+  },
+  {
+    "question": "How do planets stay in orbit?",
+    "answer": "Gravity from the Sun pulls planets inward, while their speed keeps them moving in a curved path — creating an orbit."
+  },
+  {
+    "question": "Why do we have seasons?",
+    "answer": "Seasons occur because Earth's axis is tilted, causing different parts to receive more or less sunlight during the year."
+  },
+  {
+    "question": "What is Neptune?",
+    "answer": "Neptune is the eighth and farthest planet from the Sun in our solar system. It's a gas giant known for its deep blue color and strong winds."
+  },
+  {
+    "question": "How far is Neptune from the Sun?",
+    "answer": "Neptune is about 4.5 billion kilometers (2.8 billion miles) away from the Sun."
+  },
+  {
+    "question": "What is Neptune made of?",
+    "answer": "Neptune is composed mainly of hydrogen, helium, and ices like water, ammonia, and methane — which gives it its blue color."
+  },
+  {
+    "question": "Does Neptune have rings?",
+    "answer": "Yes, Neptune has five main rings made of dust and ice particles, although they are faint and hard to see."
+  },
+  {
+    "question": "How many moons does Neptune have?",
+    "answer": "Neptune has 14 known moons. The largest is Triton, which orbits the planet in the opposite direction of its rotation."
+  },
+  {
+    "question": "What is Triton?",
+    "answer": "Triton is Neptune's largest moon. It's unique because it orbits backward (retrograde), suggesting it was captured by Neptune's gravity."
+  },
+  {
+    "question": "How long is a day on Neptune?",
+    "answer": "A day on Neptune (one full rotation) lasts about 16 hours."
+  },
+  {
+    "question": "How long does Neptune take to orbit the Sun?",
+    "answer": "Neptune takes about 165 Earth years to complete one orbit around the Sun."
+  },
+  {
+    "question": "Why is Neptune blue?",
+    "answer": "Neptune appears blue because its atmosphere contains methane, which absorbs red light and reflects blue light."
+  },
+  {
+    "question": "Has a spacecraft visited Neptune?",
+    "answer": "Yes, NASA’s Voyager 2 is the only spacecraft to have visited Neptune, flying by in 1989 and sending back incredible data and images."
+  }
+]
