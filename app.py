@@ -3,7 +3,7 @@ import json
 from transformers import pipeline
 from difflib import get_close_matches
 import os
-
+import logging
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
