@@ -25,7 +25,6 @@ except json.JSONDecodeError as e:
     data = []
 except UnicodeDecodeError as e:
     print(f"Error: Encoding issue in neptunebot.json - {e}")
-    data = []
 
 # Extract questions and answers, with safety check
 questions = [item['question'].lower() for item in data if isinstance(item, dict) and 'question' in item]
