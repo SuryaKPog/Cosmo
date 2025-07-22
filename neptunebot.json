@@ -354,5 +354,101 @@
   {
     "question": "What’s the farthest object humans have ever seen?",
     "answer": "Thanks to powerful telescopes, we've seen light from galaxies over 13 billion years old — nearly at the edge of the observable universe. Talk about looking into the past!"
+  },
+  {
+    "question": "What is the Big Bang?",
+    "answer": "The Big Bang is the event that created our universe about 13.8 billion years ago, when space itself began expanding from a hot, dense state."
+  },
+  {
+    "question": "What is dark energy?",
+    "answer": "Dark energy is a mysterious force driving the accelerated expansion of the universe, making up about 68% of its total energy content."
+  },
+  {
+    "question": "What is a wormhole?",
+    "answer": "A wormhole is a hypothetical tunnel-like structure in spacetime that could connect distant points in the universe, potentially allowing for faster-than-light travel."
+  },
+  {
+    "question": "What is the observable universe?",
+    "answer": "The observable universe is the part of the universe we can see, limited by the speed of light and the age of the universe, currently estimated to be about 93 billion light-years across."
+  },
+  {
+    "question": "What is a pulsar?",
+    "answer": "A pulsar is a highly magnetized rotating neutron star that emits beams of electromagnetic radiation, appearing as pulses when viewed from Earth."
+  },
+  {
+    "question": "What is a galaxy cluster?",
+    "answer": "A galaxy cluster is a large group of galaxies held together by gravity, often containing hundreds or thousands of galaxies."
+  },
+  {
+    "question": "What is the cosmic microwave background radiation?",
+    "answer": "The cosmic microwave background radiation is the afterglow of the Big Bang, a faint glow of radiation filling the universe, providing evidence of its hot, dense origins."
+  },
+  {
+    "question": "What is a red giant?",
+    "answer": "A red giant is a late stage in a star's life cycle when it expands and cools after exhausting its hydrogen fuel, becoming larger and redder."
+  },
+  {
+    "question": "What is a white dwarf?",
+    "answer": "A white dwarf is the remnant core of a low to medium mass star that has shed its outer layers, leaving behind a hot, dense core that will eventually cool and fade."
+  },
+  {
+    "question": "What is a black dwarf?",
+    "answer": "A black dwarf is a theoretical stellar remnant that has cooled to the point where it no longer emits significant heat or light, but none have been observed yet since the universe isn't old enough."
+  },
+  {
+    "question": "What is a gamma-ray burst?",
+    "answer": "A gamma-ray burst is an extremely energetic explosion in distant galaxies, releasing intense gamma radiation, often associated with the collapse of massive stars or the merger of neutron stars."
+  },
+  {
+    "question": "What is a rogue planet?",
+    "answer": "A rogue planet is a planetary body that does not orbit a star and instead drifts through space, possibly ejected from its original system."
+  },
+  {
+    "question": "What is the Fermi Paradox?",
+    "answer": "The Fermi Paradox refers to the apparent contradiction between the high probability of extraterrestrial life in the universe and the lack of evidence or contact with such civilizations."
+  },
+  {
+    "question": "What is a cosmic ray?",
+    "answer": "Cosmic rays are high-energy particles from outer space, primarily protons and atomic nuclei, that travel at nearly the speed of light and can interact with Earth's atmosphere."
+  },
+  {
+    "question": "What is a solar flare?",
+    "answer": "A solar flare is a sudden, intense burst of radiation from the Sun's surface, caused by the release of magnetic energy, which can affect space weather and communication systems on Earth."
+  },
+  {
+    "question": "What is a magnetar?",
+    "answer": "A magnetar is a type of neutron star with an extremely strong magnetic field, capable of producing powerful bursts of X-rays and gamma rays."
+  },
+  {
+    "question": "What is a cosmic string?",
+    "answer": "A cosmic string is a hypothetical one-dimensional topological defect in spacetime, theorized to have formed in the early universe, which could have significant gravitational effects."
+  },
+  {
+    "question": "What is the Great Attractor?",
+    "answer": "The Great Attractor is a gravitational anomaly in intergalactic space that influences the motion of galaxies over a region of about 150 million light-years, drawing them towards it."
+  },
+  {
+    "question": "What is the observable universe's edge?",
+    "answer": "The edge of the observable universe is not a physical boundary but rather the limit of what we can see, determined by the speed of light and the age of the universe, currently estimated to be about 46.5 billion light-years away."
+  },
+  {
+    "question": "What is a cosmic void?",
+    "answer": "A cosmic void is a large, empty region of space with very few galaxies, often surrounded by walls of galaxy clusters, making up about 80% of the universe's volume."
+  },
+  {
+    "question": "What is the difference between a comet and an asteroid?",
+    "answer": "Comets are icy bodies that release gas and dust when they approach the Sun, forming a glowing coma and tail, while asteroids are rocky or metallic objects that do not exhibit this behavior."
+  },
+  {
+    "question": "What is the Oort Cloud?",
+    "answer": "The Oort Cloud is a hypothetical spherical shell of icy bodies surrounding the solar system, believed to be the source of long-period comets."
+  },
+  {
+    "question": "What is a solar system?",
+    "answer": "A solar system is a gravitationally bound system of a star and the celestial bodies that orbit it, including planets, moons, asteroids, comets, and meteoroids."
+  },
+  {
+    "question": "What is the difference between a planet and a dwarf planet?",
+    "answer": "A planet is a celestial body that orbits a star, is spherical in shape, and has cleared its orbit of other debris, while a dwarf planet also orbits a star and is spherical but has not cleared its orbit."
   }
 ]
