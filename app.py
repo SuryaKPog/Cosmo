@@ -56,7 +56,7 @@ def find_answer(user_input):
         logger.debug(f"Matched question: {matched_question}")
         for item in data:
             if item.get('question', '').lower() == matched_question:
-                return f"Stellar query! {item['answer']}"
+                return item['answer']
     
     # Step 2: Use Transformer for Q&A
     if context:
