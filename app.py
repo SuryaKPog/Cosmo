@@ -46,7 +46,7 @@ def find_answer(user_input):
     if not data:
         return "No space facts loaded! Check neptunebot.json."
     if not qa_pipeline:
-        return "CosmosBot’s engines are down! Transformer model failed to load."
+        return "Cosmo’s engines are down! Transformer model failed to load."
 
     # Step 1: Check for close matches in neptunebot.json
     user_input_lower = user_input.lower().strip()
@@ -66,7 +66,7 @@ def find_answer(user_input):
             score = result['score']
             logger.debug(f"Transformer answer: {answer}, score: {score}")
             if score > 0.4:  # Lowered threshold for flexibility
-                return f"CosmosBot diving into the void: {answer}. Want more cosmic insights?"
+                return f"Cosmo diving into the void: {answer}. Want more cosmic insights?"
         except Exception as e:
             logger.error(f"Transformer error: {e}")
     
