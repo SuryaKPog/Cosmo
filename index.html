@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmo: Stellar Explorer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      background: url('/static/neptune.png') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+      background-attachment: fixed;
+      font-family: 'Exo 2', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Background Neptune Image */
+    .background-neptune {
+      background: url('/static/neptune.png') no-repeat center center;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: -10;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(10, 25, 47, 0.9);
+      border-bottom: 2px solid #b3e5fc;
+      box-shadow: 0 2px 6px rgba(179, 229, 252, 0.2);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 0.5rem 1rem;
+    }
+    .navbar a {
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 400;
+      transition: color 0.3s;
+      margin: 0 1rem;
+    }
+    .navbar a:hover {
+      color: #b3e5fc;
+    }
+    .cosmo-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #c7e3f0;
+      text-shadow: none;
+      background: none;
+      position: fixed;
+      left: 50%;
+      bottom: 2rem;
+      transform: translateX(-50%);
+      animation: floatOutline 6s ease-in-out infinite;
+      z-index: 20;
+      width: 100%;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    @keyframes floatOutline {
+      0%, 100% {
+      transform: translateX(-50%) translateY(0);
+      }
+      50% {
+      transform: translateX(-50%) translateY(-8px);
+      }
+    }
+
+    /* Space Objects (Stars Only) */
+    .space-objects {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 5;
+    }
+    .particle {
+      position: absolute;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: twinkle 3s infinite alternate;
+    }
+    .particle-star {
+      position: absolute;
+      top: -5px;
+      left: calc(var(--left) * 100vw);
+      width: 3px;
+      height: 3px;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: fall 3s linear forwards;
+    }
+    .particle-float {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: float 15s infinite linear;
+    }
+    @keyframes float {
+      0% { transform: translate(0, 0); opacity: 0.4; }
+      50% { transform: translate(20vw, 20vh); opacity: 0.7; }
+      100% { transform: translate(40vw, 40vh); opacity: 0.4; }
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+    @keyframes fall {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(110vh); opacity: 0; }
+    }
+
+    /* Main Chatbox */
+    #chatbox {
+      width: 300px;
+      margin: 4rem 0 0 2rem;
+      padding: 1rem;
+      position: relative;
+      z-index: 3;
+    }
+    #messages {
+      min-height: 300px;
+      padding: 1rem;
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
+      border: 2px solid #b3e5fc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow-y: auto;
+      box-shadow: 0 2px 4px rgba(179, 229, 252, 0.1);
+    }
+    #messages p {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+    #messages p.user {
+      background: rgba(179, 229, 252, 0.2);
+      text-align: right;
+    }
+    #messages p.bot {
+      background: rgba(255, 255, 255, 0.1);
+      text-align: left;
+    }
+    #messages p b {
+      color: #b3e5fc;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .typing {
+      display: none;
+      color: #d0e8f5;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    #userInput {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #b3e5fc;
+      border-radius: 4px;
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
+      color: #ffffff;
+    }
+    #sendButton {
+      padding: 0.5rem 1rem;
+      background: #b3e5fc;
+      color: #0a0a23;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #sendButton:hover {
+      background: #d0e8f5;
+    }
+
+    /* About Section */
+    #about {
+      max-width: 300px;
+      margin: 1rem 0 0 2rem;
+      padding: 1rem;
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
+      border: 2px solid #b3e5fc;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(179, 229, 252, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0.25rem 0.5rem;
+      }
+      .navbar a {
+        margin: 0 0.5rem;
+      }
+      .centered-title {
+        font-size: 2rem;
+        letter-spacing: 8px;
+        top: 85%;
+      }
+      #chatbox {
+        width: 250px;
+        margin: 2rem 0 0 1rem;
+        padding: 0.5rem;
+      }
+      #messages {
+        padding: 0.5rem;
+      }
+      #userInput, #sendButton {
+        padding: 0.25rem;
+      }
+      #about {
+        max-width: 250px;
+        margin: 1rem 0 0 1rem;
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔵 Neptune Background Image -->
+  <div class="background-neptune"></div>
+
+  <!-- Space Objects (Stars Only) -->
+  <div class="space-objects" id="spaceObjects"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar flex justify-between items-center px-6 py-4">
+    <div class="text-xl font-bold font-orbitron text-white">cosmo</div>
+    <div class="space-x-6">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="https://x.com">Contact</a>
+    </div>
+  </nav>
+
+  <div class="background-neptune"></div>
+
+  <div class="cosmo-text">welcome aboard, I am cosmo.</div>
+
+
+  <!-- Main Chatbox -->
+  <div id="chatbox" class="mx-auto">
+    <div id="messages" class="mb-4"></div>
+    <div class="typing" id="typingIndicator">cosmo is scanning the stars...</div>
+    <div class="flex space-x-3">
+      <input type="text" id="userInput" placeholder="Ask about stars, planets, or black holes..." class="flex-grow" />
+      <button id="sendButton" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="mt-8 text-center max-w-2xl mx-auto">
+    <h2 class="text-2xl font-space-grotesk text-b3e5fc">About Cosmo</h2>
+    <p class="text-gray-200">Cosmo is your AI-powered guide to the universe! Ask about black holes, galaxies, or take a cosmic quiz!</p>
+  </section>
+
+  <!-- Script: Space particles & chat -->
+  <script>
+    // Space objects (stars only)
+    const spaceObjects = document.getElementById('spaceObjects');
+    if (spaceObjects) {
+      // Floating stars (15)
+      for (let i = 0; i < 15; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle-float';
+        p.style.left = `${Math.random() * 100}vw`;
+        p.style.top = `${Math.random() * 100}vh`;
+        p.style.animationDelay = `${Math.random() * 10}s`;
+        spaceObjects.appendChild(p);
+      }
+      // Falling stars (5)
+      for (let i = 0; i < 5; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle-star';
+        p.style.setProperty('--left', Math.random());
+        p.style.animationDelay = `${i * 6}s`; // Staggered start
+        spaceObjects.appendChild(p);
+      }
+    } else {
+      console.error('Space objects container not found!');
+    }
+
+    // Chat handling
+    async function sendMessage() {
+      const input = document.getElementById('userInput');
+      const messages = document.getElementById('messages');
+      const typingIndicator = document.getElementById('typingIndicator');
+      const userMessage = input.value.trim();
+      if (!userMessage) return;
+
+      messages.innerHTML += `<p class="user"><b>You:</b> ${userMessage}</p>`;
+      input.value = '';
+      messages.scrollTop = messages.scrollHeight;
+      typingIndicator.style.display = 'block';
+
+      try {
+        const response = await fetch(`/chat?message=${encodeURIComponent(userMessage)}`);
+        const data = await response.json();
+        typingIndicator.style.display = 'none';
+        messages.innerHTML += `<p class="bot"><b>Cosmo:</b> ${data.response}</p>`;
+        messages.scrollTop = messages.scrollHeight;
+      } catch (error) {
+        typingIndicator.style.display = 'none';
+        messages.innerHTML += `<p class="bot"><b>Cosmo:</b> Cosmic interference detected! Try again.</p>`;
+        messages.scrollTop = messages.scrollHeight;
+      }
+    }
+
+    document.getElementById('userInput').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+  </script>
+</body>
+</html>
