@@ -13,5 +13,6 @@ Welcome aboard! Meet Cosmo, the friendly and curious AI chatbot who lives among 
 “What happens if I fall into a black hole?”
 “Could I surf a gravity wave?”
 “Do storms exist in space?”
+
 💫 Custom Animation & Fonts – Includes floating outline animation, stroke-based text design, and soft-glow effects.
 
