@@ -14,5 +14,5 @@ Welcome aboard! Meet Cosmo, the friendly and curious AI chatbot who lives among 
 “Could I surf a gravity wave?”
 “Do storms exist in space?”
 
-💫 Custom Animation & Fonts – Includes floating outline animation, stroke-based text design, and soft-glow effects.
+Custom Animation & Fonts – Includes floating outline animation, stroke-based text design, and soft-glow effects.
 
