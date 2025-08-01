@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cosmo: Stellar Explorer</title>
+
+  <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -26,6 +29,7 @@
       flex-direction: column;
     }
 
+    /* Background Neptune Image */
     .background-neptune {
       background: url('/static/neptune.png') no-repeat center center;
       background-size: cover;
@@ -39,6 +43,7 @@
       pointer-events: none;
     }
 
+    /* Navbar */
     .navbar {
       background: rgba(10, 25, 47, 0.9);
       border-bottom: 2px solid #b3e5fc;
@@ -86,6 +91,7 @@
       }
     }
 
+    /* Space Objects (Stars Only) */
     .space-objects {
       position: fixed;
       top: 0;
@@ -133,6 +139,7 @@
       100% { transform: translateY(110vh); opacity: 0; }
     }
 
+    /* Main Chatbox */
     #chatbox {
       width: 300px;
       margin: 4rem 0 0 2rem;
@@ -143,7 +150,7 @@
     #messages {
       min-height: 300px;
       padding: 1rem;
-      background: rgba(26, 42, 68, 0.7); 
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
       border: 2px solid #b3e5fc;
       border-radius: 8px;
       margin-bottom: 1rem;
@@ -178,7 +185,7 @@
       padding: 0.5rem;
       border: 1px solid #b3e5fc;
       border-radius: 4px;
-      background: rgba(26, 42, 68, 0.7); 
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
       color: #ffffff;
     }
     #sendButton {
@@ -198,7 +205,7 @@
       max-width: 300px;
       margin: 1rem 0 0 2rem;
       padding: 1rem;
-      background: rgba(26, 42, 68, 0.7); 
+      background: rgba(26, 42, 68, 0.7); /* Dark blue with 0.7 opacity */
       border: 2px solid #b3e5fc;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(179, 229, 252, 0.1);
@@ -247,7 +254,7 @@
     <div class="text-xl font-bold font-orbitron text-white">cosmo</div>
     <div class="space-x-6">
       <a href="#">Home</a>
-      <a href="#about">About</a>
+      <a href="{{ url_for('about') }}">About</a>
       <a href="https://x.com">Contact</a>
     </div>
   </nav>
